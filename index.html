@@ -3,66 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>မင်းရဲ့ကိုယ်ပိုင်စာမျက်နှာ</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            display: block;
-            border: 5px solid #3498db;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>မြန်မာကျောင်းသား၏ ကိုယ်ပိုင်စာမျက်နှာ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="profile.png.jpg" alt="Profile Picture" class="profile-img">
-    
-    <h1>ကျွန်တော့နာမည်စောဝေလွင်ဦးဖြစ်ပါတယ်h1>
-    
-    <div class="section">
-        <h2>ကျွန်တော်အကြောင်း</h2>
-        <p>ကျွန်တော်က အထက်တန်းကျောင်းသားတစ်ယောက်ပါ။ English စာလေ့လာရတာနဲ့ ကွန်ပျူတာပရိုဂရမ်ရေးသားခြင်းကို အထူးစိတ်ဝင်စားပါတယ်။</p>
-    </div>
-    
-    <div class="section">
-        <h2>စိတ်ဝင်စားတဲ့အရာများ</h2>
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="Profile" class="profile-img">
+            <h1 id="greeting">ဟယ်လို!</h1>
+            <h2>ကျွန်တော်က <span id="typing-text"></span></h2>
+        </div>
+    </header>
+
+    <nav>
         <ul>
-            <li>Web Development</li>
-            <li>Programming</li>
-            <li>English Learning</li>
-            <li>Technology</li>
+            <li><a href="#about">ကျွန်တော်အကြောင်း</a></li>
+            <li><a href="#skills">ကျွမ်းကျင်မှုများ</a></li>
+            <li><a href="#projects">လုပ်ဆောင်ချက်များ</a></li>
+            <li><a href="#contact">ဆက်သွယ်ရန်</a></li>
         </ul>
-    </div>
-    
-    <div class="section">
-        <h2>ဆက်သွယ်ရန်</h2>
-        <p>Email: <a href="shinwayama36@gmail.com">your.email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-    </div>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>ကျွန်တော်အကြောင်း</h2>
+            <p>ကျွန်တော်က အထက်တန်းကျောင်းသားတစ်ယောက်ဖြစ်ပြီး ကွန်ပျူတာပရိုဂရမ်ရေးသားခြင်းနဲ့ English စာကို အထူးစိတ်ဝင်စားပါတယ်။ GitHub ကိုလေ့လာနေပြီး ကိုယ်ပိုင် website တည်ဆောက်ဖို့ လေ့လာနေပါတယ်။</p>
+        </section>
+
+        <section id="skills">
+            <h2>ကျွမ်းကျင်မှုများ</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level html">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level css">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level javascript">50%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>English</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level english">85%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>လုပ်ဆောင်ချက်များ</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>ပထမဆုံး Website</h3>
+                    <p>HTML နဲ့ CSS ကိုအသုံးပြုပြီး ဖန်တီးထားတဲ့ ရိုးရှင်းတဲ့ website</p>
+                    <button class="view-btn">ကြည့်ရှုရန်</button>
+                </div>
+                <div class="project-card">
+                    <h3>JavaScript Game</h3>
+                    <p>JavaScript နဲ့ ရေးထားတဲ့ ရိုးရှင်းတဲ့ ဂိမ်းလေး</p>
+                    <button class="view-btn">ကြည့်ရှုရန်</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>ဆက်သွယ်ရန်</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">နာမည်</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">အီးမေးလ်</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">မက်ဆေ့ချ်</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">ပို့ရန်</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ကျွန်တော်၏ကိုယ်ပိုင် Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>မြန်မာကျောင်းသား၏ ကိုယ်ပိုင်စာမျက်နှာ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="Profile" class="profile-img">
+            <h1 id="greeting">ဟယ်လို!</h1>
+            <h2>ကျွန်တော်က <span id="typing-text"></span></h2>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">ကျွန်တော်အကြောင်း</a></li>
+            <li><a href="#skills">ကျွမ်းကျင်မှုများ</a></li>
+            <li><a href="#projects">လုပ်ဆောင်ချက်များ</a></li>
+            <li><a href="#contact">ဆက်သွယ်ရန်</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>ကျွန်တော်အကြောင်း</h2>
+            <p>ကျွန်တော်က အထက်တန်းကျောင်းသားတစ်ယောက်ဖြစ်ပြီး ကွန်ပျူတာပရိုဂရမ်ရေးသားခြင်းနဲ့ English စာကို အထူးစိတ်ဝင်စားပါတယ်။ GitHub ကိုလေ့လာနေပြီး ကိုယ်ပိုင် website တည်ဆောက်ဖို့ လေ့လာနေပါတယ်။</p>
+        </section>
+
+        <section id="skills">
+            <h2>ကျွမ်းကျင်မှုများ</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level html">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level css">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level javascript">50%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>English</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level english">85%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>လုပ်ဆောင်ချက်များ</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>ပထမဆုံး Website</h3>
+                    <p>HTML နဲ့ CSS ကိုအသုံးပြုပြီး ဖန်တီးထားတဲ့ ရိုးရှင်းတဲ့ website</p>
+                    <button class="view-btn">ကြည့်ရှုရန်</button>
+                </div>
+                <div class="project-card">
+                    <h3>JavaScript Game</h3>
+                    <p>JavaScript နဲ့ ရေးထားတဲ့ ရိုးရှင်းတဲ့ ဂိမ်းလေး</p>
+                    <button class="view-btn">ကြည့်ရှုရန်</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>ဆက်သွယ်ရန်</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">နာမည်</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">အီးမေးလ်</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">မက်ဆေ့ချ်</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">ပို့ရန်</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ကျွန်တော်၏ကိုယ်ပိုင် Website</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
