@@ -1,149 +1,68 @@
 <!DOCTYPE html>
-<html lang="my">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>စောဝေလွင်ဦး - ၉တန်းကျောင်းသား၊ ဘောလုံးသမား၊ Hydroponic ဝါသနာရှင်</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Padauk&display=swap">
-    <link rel="stylesheet" href="style.css">
+    <title>မင်းရဲ့ကိုယ်ပိုင်စာမျက်နှာ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #3498db;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>စောဝေလွင်ဦး</h1>
-            <p>ဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း၊ ၉တန်းကျောင်းသား</p>
-        </div>
-    </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#home">ပင်မစာမျက်နှာ</a></li>
-                <li><a href="#about">ကျွန်တော်အကြောင်း</a></li>
-                <li><a href="#hobbies">ဝါသနာများ</a></li>
-                <li><a href="#hydroponic">Hydroponic</a></li>
-                <li><a href="#contact">ဆက်သွယ်ရန်</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>မင်္ဂလာပါ!</h2>
-                <p>ကျွန်တော့်နာမည်က စောဝေလွင်ဦးပါ။ ၉တန်းကျောင်းသားတစ်ယောက်ဖြစ်ပြီး ဘောလုံးနဲ့ မြေမဲ့စိုက်ပျိုးရေးကို အထူးစိတ်ဝင်စားပါတယ်။</p>
-                <a href="#about" class="btn">ကျွန်တော်အကြောင်း ပိုမိုဖတ်ရှုရန်</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>ကျွန်တော်အကြောင်း</h2>
-            <div class="about-grid">
-                <div class="about-img">
-                    <img src="profile.png.jpg" alt="စောဝေလွင်ဦး">
-                </div>
-                <div class="about-text">
-                    <h3>စောဝေလွင်ဦး</h3>
-                    <p><strong>အသက်:</strong> ၁၅ နှစ်</p>
-                    <p><strong>ကျောင်း:</strong> ဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း</p>
-                    <p><strong>တန်း:</strong> ၉ တန်း</p>
-                    <p><strong>နေရပ်လိပ်စာ:</strong> ဘားအံမြို့အံမြို့</p>
-                    <p>ကျွန်တော်က ဘောလုံးကန်ရတာကို အရမ်းကြိုက်ပါတယ်။ ကျောင်းဘောလုံးအသင်းမှာ ကစားဖြစ်ပါတယ်။ စိုက်ပျိုးရေးလည်း ဝါသနာပါပြီး အထူးသဖြင့် Hydroponic (မြေမဲ့စိုက်ပျိုးနည်း) ကို လေ့လာနေပါတယ်။</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="hobbies" class="section">
-        <div class="container">
-            <h2>ကျွန်တော့်ဝါသနာများ</h2>
-            <div class="hobbies-grid">
-                <div class="hobby-card">
-                    <img src="images/football.jpg" alt="ဘောလုံး">
-                    <h3>ဘောလုံးကန်ခြင်း</h3>
-                    <p>ကျောင်းဘောလုံးအသင်းတွင် ကစားသည်။ မနက်စောစောနှင့် ညနေပိုင်းတွင် လေ့ကျင့်ကစားလေ့ရှိသည်။</p>
-                </div>
-                <div class="hobby-card">
-                    <img src="images/gardening.jpg" alt="စိုက်ပျိုးရေး">
-                    <h3>စိုက်ပျိုးရေး</h3>
-                    <p>အိမ်တွင် ဟင်းသီးဟင်းရွက်များ စိုက်ပျိုးသည်။ Hydroponic စနစ်ဖြင့် စမ်းသပ်စိုက်ပျိုးနေသည်။</p>
-                </div>
-                <div class="hobby-card">
-                    <img src="images/reading.jpg" alt="စာဖတ်ခြင်း">
-                    <h3>စာဖတ်ခြင်း</h3>
-                    <p>သိပ္ပံနည်းပညာနှင့် စိုက်ပျိုးရေးဆိုင်ရာ စာအုပ်များကို ဖတ်ရှုလေ့ရှိသည်။</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="hydroponic" class="section dark-section">
-        <div class="container">
-            <h2>Hydroponic (မြေမဲ့စိုက်ပျိုးနည်း)</h2>
-            <div class="hydroponic-content">
-                <div class="hydroponic-text">
-                    <p>Hydroponic ဆိုတာ မြေကြီးမသုံးဘဲ ရေထဲမှာ အာဟာရဓာတ်ဖျော်ပြီး အပင်တွေကို စိုက်ပျိုးတဲ့နည်းပါ။ ဒီနည်းကို ကျွန်တော် အရမ်းစိတ်ဝင်စားပါတယ်။</p>
-                    <p>Hydroponic စနစ်ရဲ့ အကျိုးကျေးဇူးတွေကတော့:</p>
-                    <ul>
-                        <li>မြေဆီလွှာမလိုအပ်ဘူး</li>
-                        <li>ရေကို ၉၀% အထိ သက်သာစေတယ်</li>
-                        <li>ပိုးမွှားရောဂါ နည်းတယ်</li>
-                        <li>အထွက်နှုန်း ပိုများတယ်</li>
-                    </ul>
-                    <button id="hydroponic-btn" class="btn">Hydroponic အကြောင်း ပိုမိုသိရှိရန်</button>
-                </div>
-                <div class="hydroponic-img">
-                    <img src="images/hydroponic.jpg" alt="Hydroponic စိုက်ပျိုးနည်း">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>ဆက်သွယ်ရန်</h2>
-            <div class="contact-grid">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">နာမည်</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">အီးမေးလ်</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">မက်ဆေ့ချ်</label>
-                            <textarea id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">ပေးပို့မည်</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <h3>ဆက်သွယ်ရန်</h3>
-                    <p><strong>အီးမေးလ်:</strong> shinwayama36@gmail.com</p>
-                    <p><strong>ဖုန်း:</strong> 09 664754132</p>
-                    <p><strong>လိပ်စာ:</strong> ဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း၊ ဘားအံမြို့</p>
-                    
-                    <div class="social-links">
-                        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-                        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 စောဝေလွင်ဦး. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+    
+    <h1>ကျွန်တော့နာမည်စောဝေလွင်ဦးဖြစ်ပါတယ်h1>
+    
+    <div class="section">
+        <h2>ကျွန်တော်အကြောင်း</h2>
+        <p>ကျွန်တော်က အထက်တန်းကျောင်းသားတစ်ယောက်ပါ။ English စာလေ့လာရတာနဲ့ ကွန်ပျူတာပရိုဂရမ်ရေးသားခြင်းကို အထူးစိတ်ဝင်စားပါတယ်။</p>
+    </div>
+    
+    <div class="section">
+        <h2>စိတ်ဝင်စားတဲ့အရာများ</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Programming</li>
+            <li>English Learning</li>
+            <li>Technology</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>ဆက်သွယ်ရန်</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </div>
 </body>
 </html>
